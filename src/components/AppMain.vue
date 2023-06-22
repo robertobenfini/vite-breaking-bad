@@ -18,15 +18,15 @@ export default {
 
 <template>
     
-    <div>
-       <div class="container">
-        <div class="row d-flex justify-between">
-            <div v-for="(card, index) in store.arrayCards" :key="index" class="col-2 mx-2">
-                <AppCards :myCard="card" />
+    <main>
+       <div class="container bg-white p-5 mt-3 rounded">
+            <div class="row d-flex justify-content-between bg-secondary">
+                <div v-for="(card, index) in store.arrayCards" :key="index" class="col-lg-2 col-md-4 col-sm-6">
+                    <AppCards :myCard="card" />
+                </div>
             </div>
-        </div>
        </div> 
-    </div>
+    </main>
 
 </template>
 
