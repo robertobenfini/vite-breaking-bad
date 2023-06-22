@@ -65,7 +65,7 @@ export default {
         animation: button 3s ease infinite;
         }
 
-        @-webkit-keyframes roll {
+        @keyframes roll {
         from {
             transform: rotate(0);
         }
@@ -75,7 +75,7 @@ export default {
         }
         }
 
-        @-webkit-keyframes button {
+        @keyframes button {
         from,
         50%,
         to {
