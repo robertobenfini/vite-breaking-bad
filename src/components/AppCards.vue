@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-    <div :class="myCard.type1 === 'Grass' ? 'bg-grass' : myCard.type1 === 'Fire' ? 'bg-fire' : 'bg-water'" class="card text-center d-flex align-items-center my-2">
+    <div :class="myCard.type1 === 'Grass' ? 'bg-grass' : myCard.type1 === 'Fire' ? 'bg-fire' : myCard.type1 === 'Water' ? 'bg-water' : ''" class="card text-center d-flex align-items-center my-2">
         <img :src="myCard.imageUrl" alt="image">
         <div>{{ myCard.number }}</div>
         <div><h6>{{ myCard.name }}</h6></div>

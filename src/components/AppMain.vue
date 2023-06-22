@@ -20,7 +20,7 @@ export default {
     
     <main>
        <div class="container bg-white p-5 mt-3 rounded">
-            <div class="row d-flex justify-content-between bg-secondary">
+            <div class="row d-flex bg-secondary overflow-auto h-row">
                 <div v-for="(card, index) in store.arrayCards" :key="index" class="col-lg-2 col-md-4 col-sm-6">
                     <AppCards :myCard="card" />
                 </div>
@@ -31,5 +31,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-    
+    .h-row{
+        height: 500px;
+    }
 </style>
