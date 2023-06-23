@@ -35,23 +35,28 @@ export default {
 <template>
     <header>
         <div class="container">
-            <div class="row d-flex mt-3">
-                <div class="circle blue"></div>
-                <div class="circle red"></div>
-                <div class="circle yellow"></div>
-                <div class="circle green"></div>
-
-                <select name="" id="" v-model="store.typeValue" @change="$emit('typeChange')">
-                    <option value="" selected>Select type</option>
-                    <option v-for="(type, index) in typePokemon" :key="index" :value="type" >{{ type }}</option>
-                </select>
+            <div class="row mt-3">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex">
+                        <div class="circle blue"></div>
+                        <div class="circle red"></div>
+                        <div class="circle yellow"></div>
+                        <div class="circle green"></div>
+                    </div>
+                    <div>
+                        <select name="" id="" v-model="store.typeValue" @change="$emit('typeChange')">
+                            <option value="" selected>Select type</option>
+                            <option v-for="(type, index) in typePokemon" :key="index" :value="type" >{{ type }}</option>
+                        </select>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 </template>
 
 <style lang="scss" scoped>
-    
+
     .circle{
         border: 4px solid white;
         margin-left: 15px;
